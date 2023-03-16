@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Umm... hi there!</title>
+  <title>RJ's Salary Transparency Page</title>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; worker-src 'self'; child-src 'none';" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -112,7 +112,7 @@
         looking through old paystubs, etc. The data on this page intentionally omits employer names. Some information 
         may also be omitted if relevant non-disclosure agreements (NDAs) or similar prohibit it.
       </p>
-      <table class="salary_history">
+      <table id="salary-history-full-time">
         <tr>
           <th>Title</th>
           <th>Start Date</th>
@@ -125,7 +125,7 @@
           <td>Senior Cloud Engineer</td>
           <td>May 2022</td>
           <td>current</td>
-          <td>USD$180,000/year</td>
+          <td>USD $180,000/year</td>
           <td>
             <details>
               <summary>Bonus & Shares</summary>
@@ -136,24 +136,10 @@
           <td>n/a</td>
         </tr>
         <tr>
-          <td>Consultant</td>
-          <td>May 2022</td>
-          <td>May 2022</td>
-          <td>USD$110-150/hour</td>
-          <td>
-            <details>
-              <summary>Bonus & Shares</summary>
-              <p>No bonus</p>
-              <p>Ability to work for and/or purchase shares</p>
-            </details>
-          </td>
-          <td>n/a</td>
-        </tr>
-        <tr>
           <td>Principal Consultant</td>
-          <td>January 2018</td>
+          <td>June 2021</td>
           <td>May 2022</td>
-          <td>USD$176,000/year</td>
+          <td>USD $176,000/year</td>
           <td>
             <details>
               <summary>Bonus & Shares</summary>
@@ -165,9 +151,9 @@
         </tr>
         <tr>
           <td>Senior Consultant</td>
-          <td>January 2018</td>
-          <td>May 2022</td>
-          <td>USD$160,000/year</td>
+          <td>January 2021</td>
+          <td>June 2021</td>
+          <td>USD $160,000/year</td>
           <td>
             <details>
               <summary>Bonus & Shares</summary>
@@ -179,9 +165,9 @@
         </tr>
         <tr>
           <td>Consultant</td>
-          <td>January 2018</td>
-          <td>May 2022</td>
-          <td>USD$127,000/year</td>
+          <td>January 2020</td>
+          <td>January 2021</td>
+          <td>USD $148,000/year</td>
           <td>
             <details>
               <summary>Bonus & Shares</summary>
@@ -189,7 +175,214 @@
               <p>Ability to purchase shares starting at $25,000</p>
             </details>
           </td>
+          <td>Raise</td>
+        </tr>
+        <tr>
+          <td>Consultant</td>
+          <td>January 2019</td>
+          <td>January 2020</td>
+          <td>USD $136,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>10-15% bonus</p>
+              <p>Ability to purchase shares starting at $25,000</p>
+            </details>
+          </td>
+          <td>Raise</td>
+        </tr>
+        <tr>
+          <td>Consultant</td>
+          <td>January 2018</td>
+          <td>January 2019</td>
+          <td>USD $127,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>10-15% bonus</p>
+              <p>Ability to purchase shares starting at $25,000</p>
+            </details>
+          </td>
+          <td>Raise</td>
+        </tr>
+        <tr>
+          <td>Senior Lead Software Engineer</td>
+          <td>December 2016</td>
+          <td>December 2017</td>
+          <td>USD $120,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>4,000 shares vesting over 4 years</p>
+            </details>
+          </td>
+          <td>Laid Off</td>
+        </tr>
+        <tr>
+          <td>Lead Software Engineer</td>
+          <td>December 2015</td>
+          <td>December 2016</td>
+          <td>USD $100,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>4,000 shares vesting over 4 years</p>
+            </details>
+          </td>
+          <td>Raise</td>
+        </tr>
+        <tr>
+          <td>Software Engineer</td>
+          <td>March 2015</td>
+          <td>December 2015</td>
+          <td>USD $85,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>4,000 shares vesting over 4 years</p>
+            </details>
+          </td>
+          <td>Raise</td>
+        </tr>
+        <tr>
+          <td>Software Engineer</td>
+          <td>December 2014</td>
+          <td>March 2015</td>
+          <td>USD $65,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>No shares</p>
+            </details>
+          </td>
+          <td>Quit</td>
+        </tr>
+        <tr>
+          <td>Software Engineer</td>
+          <td>February 2014</td>
+          <td>December 2014</td>
+          <td>USD $55,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>$200 Amazon gift card</p>
+              <p>No shares</p>
+            </details>
+          </td>
+          <td>Raise</td>
+        </tr>
+        <tr>
+          <td>Senior Lead IT Specialist</td>
+          <td>January 2013</td>
+          <td>February 2014</td>
+          <td>USD $48,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>No shares</p>
+            </details>
+          </td>
+          <td>Quit</td>
+        </tr>
+        <tr>
+          <td>IT Specialist</td>
+          <td>May 2012</td>
+          <td>January 2013</td>
+          <td>USD $36,000/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>No shares</p>
+            </details>
+          </td>
           <td>Promotion</td>
+        </tr>
+        <tr>
+          <td>Software Engineer Intern</td>
+          <td>July 2012</td>
+          <td>August 2013</td>
+          <td>USD $0/year</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>No shares</p>
+            </details>
+          </td>
+          <td>Project ended</td>
+        </tr>
+        <tr>
+          <td>IT Support / Software Engineer / Course Designer</td>
+          <td>October 2003</td>
+          <td>August 2006</td>
+          <td>USD $15/hour</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>No shares</p>
+            </details>
+          </td>
+          <td>Quit</td>
+        </tr>
+        <tr>
+          <td>IT Support / Software Engineer / Course Designer</td>
+          <td>February 1999</td>
+          <td>August 2003</td>
+          <td>USD $100/week</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>No shares</p>
+            </details>
+          </td>
+          <td>Quit</td>
+        </tr>
+      </table>
+      <br />
+      <table id="salary-history-contract-work">
+        <tr>
+          <th>Title</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Salary</th>
+          <th>Other Benefits</th>
+          <th>How I Left</th>
+        </tr>
+        <tr>
+          <td>Consultant</td>
+          <td>???</td>
+          <td>n/a</td>
+          <td>USD $110-150/hour</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>Ability to work for and/or purchase shares</p>
+            </details>
+          </td>
+          <td>n/a</td>
+        </tr>
+        <tr>
+          <td>Consultant / Senior Engineer</td>
+          <td>January 2014</td>
+          <td>July 2015</td>
+          <td>USD $80-100/hour</td>
+          <td>
+            <details>
+              <summary>Bonus & Shares</summary>
+              <p>No bonus</p>
+              <p>No shares</p>
+            </details>
+          </td>
+          <td>Company was sold -> I quit</td>
         </tr>
       </table>
       <p>It's likely there will be some lag but I'll probably update this page when:</p>
