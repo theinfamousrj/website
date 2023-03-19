@@ -4,7 +4,8 @@
 <head>
   <title>Identifying Ford Small Block Engines</title>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; worker-src 'self'; child-src 'none';" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src https://*; worker-src 'self'; child-src 'none';" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/static/css/hack.css?bustCache=deadbeef01">
   <link rel="stylesheet" href="/static/css/bocks-dark.css?bustCache=deadbeef01">
@@ -82,13 +83,13 @@
   <div class="container">
     <header>
       <nav>
-        <a href="/">RJ</a> - 
-        <a href="/blog">Blog</a> - 
-        <a href="/contact">Contact</a> - 
-        <a href="/resume">Resume</a> - 
-        <a href="/random">Random</a> - 
-        <a href="/woodworking">Woodworking</a> - 
-        <a href="/car-stuff">Car Stuff</a> | 
+        <a href="/">RJ</a> -
+        <a href="/blog">Blog</a> -
+        <a href="/contact">Contact</a> -
+        <a href="/resume">Resume</a> -
+        <a href="/random">Random</a> -
+        <a href="/woodworking">Woodworking</a> -
+        <a href="/car-stuff">Car Stuff</a> |
         Cloud Eng @ <a target="_blank" rel="noopener noreferrer" href="https://chippercash.com">Chipper</a>
       </nav>
     </header>
@@ -96,8 +97,1406 @@
     <div class="mainframe">
       <h1>Identifying Ford Small Block Engines</h1>
       <p>
-        So here you are with your engine...
+        So here you are with your engine and you have no idea what you've got outside of what you were told by whoever
+        you purchased this
+        from and what you can see for yourself: straight-six, v8, etc. So I spent a lot of time on the internet digging
+        for information and
+        compiling it in a quick-access format. If you just search this page for the first 3 characters of your casting
+        number, you should be
+        able to find your engine pretty easily. You can also use the
+        <a href="https://help.summitracing.com/app/answers/detail/a_id/5046/~/which-ford-v8-do-i-have">handy little test
+          Summit Racing built</a>.
+        Also, be aware that this only covers engines from 1952-1966 and this is where I got the
+        <a href="https://www.enginelabs.com/engine-tech/a-guide-to-ford-v8-engine-block-casting-numbers-1952-1996/">engine
+          block code data</a>.
       </p>
+      <h2>Small Block Ford Engine Identification Tables</h2>
+      <h3>Outliers</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>427</td>
+            <td>1968, 427 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>471</td>
+            <td>1955-1964, 272/292/312 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>603</td>
+            <td>1960-1962, 352, FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>891</td>
+            <td>1958-1973, 401 Super Duty big-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>EAD</td>
+            <td>1952-1954, 317 Y-Block small-block, 2-bolt mains, Lincoln</td>
+          </tr>
+          <tr>
+            <td>EAL</td>
+            <td>1954, 279 Y-Block small-block, 2-bolt mains, Lincoln, Truck</td>
+          </tr>
+          <tr>
+            <td>EAM</td>
+            <td>1954, 317 Y-Block small-block, 2-bolt mains, Lincoln, Truck</td>
+          </tr>
+          <tr>
+            <td>EBJ</td>
+            <td>1955, 341 Y-Block small-block, 2-bolt mains, Lincoln</td>
+          </tr>
+          <tr>
+            <td>EBU</td>
+            <td>1954-1955, 239 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EBV</td>
+            <td>1945-1955, 239 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>EBV-E</td>
+            <td>1945-1955, 239 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>EBV-F</td>
+            <td>1945-1955, 239 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>EBV-J</td>
+            <td>1945-1955, 239 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>EBY</td>
+            <td>1954-1964, 256/272 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EBY-F</td>
+            <td>1954-1964, 256/272 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EBZ</td>
+            <td>1954-1964, 256/272 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>ECG</td>
+            <td>1955-1964, 256/272 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECG-A</td>
+            <td>1955-1957, 272 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECG-B</td>
+            <td>1955-1958, 272 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECG-C</td>
+            <td>1956-1958, 272 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECH</td>
+            <td>1955, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECJ</td>
+            <td>1955, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECK</td>
+            <td>1955-1964, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECK-B</td>
+            <td>1955-1958, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECL</td>
+            <td>1955, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECS</td>
+            <td>1956-1963, 302 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECT</td>
+            <td>1956-1964, 332 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECT-A</td>
+            <td>1956-1963, 332 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECU</td>
+            <td>1956-1957, 368/378 Y-Block small-block, 2-bolt mains, Lincoln</td>
+          </tr>
+          <tr>
+            <td>ECZ</td>
+            <td>1955-1964, 292/312 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECZ-A</td>
+            <td>1950-1960, 312 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>ECZ-C</td>
+            <td>1955-1960, 312 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDB</td>
+            <td>1955-1964, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDB-E</td>
+            <td>1960-1964, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDC</td>
+            <td>1958-1967, 332/352 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDC-B</td>
+            <td>1958-1959, 352 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDC-B</td>
+            <td>1960, 352 FE medium-block, 2-bolt mains, HP</td>
+          </tr>
+          <tr>
+            <td>EDC-C</td>
+            <td>1958-1959, 352 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDC-C</td>
+            <td>1960, 352 FE medium-block, 2-bolt mains, HP</td>
+          </tr>
+          <tr>
+            <td>EDG</td>
+            <td>1958-1960, 383/410/430 Mercury-Edsel-Lincoln (MEL) big-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDL</td>
+            <td>1958-1976, 401/477 Super Duty big-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDL</td>
+            <td>1958-1973, 401 Super Duty big-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDM</td>
+            <td>1958-1973, 401 Super Duty big-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EDV</td>
+            <td>1955-1959, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EET</td>
+            <td>1956-1963, 332 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EPY-F</td>
+            <td>1955-1958, 272 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>KBY</td>
+            <td>1954-1958, 272 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>475-1433</td>
+            <td>1958-1976, 401/477/534 Super Duty big-block, Truck</td>
+          </tr>
+          <tr>
+            <td>5750174</td>
+            <td>1956-1963, 332 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>5750218</td>
+            <td>1956-1963, 332 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>5750281</td>
+            <td>1956-1964, 332 FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>5750462</td>
+            <td>1956-1957, 332 FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>5750492</td>
+            <td>1956-1963, 332 FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>5750603</td>
+            <td>1958-1962, 332/352 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>5751091</td>
+            <td>1959-1960, 383/430 Mercury-Edsel-Lincoln (MEL) big-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>74DY-AB</td>
+            <td>1974-1976, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>75ZY-AA</td>
+            <td>1968-1977, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>77AY</td>
+            <td>1975-1976, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>B-Blocks</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>B5AE</td>
+            <td>1956-1958, 272 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>B6TE-A</td>
+            <td>1956-1963, 332 FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>B7AE</td>
+            <td>1955-1964, 292/312 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>B7ME-A</td>
+            <td>1955-1960, 312 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>B9AE</td>
+            <td>1959-1962, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>B9AE-B</td>
+            <td>1960-1962, 352/390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>B9AE-F</td>
+            <td>1959-1964, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>B9ME-D</td>
+            <td>1959-1960, 430, Mercury-Edsel-Lincoln (MEL) big-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>B9ME601</td>
+            <td>1959-1960, 430, Mercury-Edsel-Lincoln (MEL) big-block, 2-bolt mains</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>C-Blocks</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>C0OE-C</td>
+            <td>1969-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C0TE</td>
+            <td>1960-1964, 292 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>C0TE-8</td>
+            <td>1960-1964, 292 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>C1AE</td>
+            <td>1961-1964, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C1AE-A</td>
+            <td>1961-1963, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C1AE-C</td>
+            <td>1961-1963, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C1AE-G</td>
+            <td>1961-1963, 352/361/390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C1AE-K</td>
+            <td>1961-1969, 330/360/361/391, FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>C1AE-R</td>
+            <td>1961, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C1AE-V</td>
+            <td>1961, 390 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C1TE</td>
+            <td>1961-1964, 292 Y-Block small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>C2AE-B</td>
+            <td>1962-1963, 406 FE medium-block, cross-bolted mains</td>
+          </tr>
+          <tr>
+            <td>C2AE-BC</td>
+            <td>1962, 390 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C2AE-BD</td>
+            <td>1962-1963, 406 FE medium-block, cross-bolted mains</td>
+          </tr>
+          <tr>
+            <td>C2AE-BE</td>
+            <td>1962, 390 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C2AE-BR</td>
+            <td>1962, 390 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C2AE-BS</td>
+            <td>1962, 390 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C2AE-C</td>
+            <td>1962-1964, 292 Y-Block small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C2AE-D</td>
+            <td>1962-1963, 406 FE medium-block, cross-bolted mains</td>
+          </tr>
+          <tr>
+            <td>C2AE-J</td>
+            <td>1962, 406 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C2AE-K</td>
+            <td>1962, 406 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C2AE-V</td>
+            <td>1962, 406 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C2OE</td>
+            <td>1962, 221 Windsor small-block, 2-bolt mains, 2 freeze plugs, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C2OE-G</td>
+            <td>1962, 221 Windsor small-block, 2-bolt mains, 2 freeze plugs, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C2SE</td>
+            <td>1962-1963, 390 FE medium-block, 2-bolt mains,</td>
+          </tr>
+          <tr>
+            <td>C3AE</td>
+            <td>1963, 289 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C3SE-A</td>
+            <td>1963, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C3AE-AB</td>
+            <td>1963, 427 FE medium-block, cross-bolted mains, top-oiler</td>
+          </tr>
+          <tr>
+            <td>C3AE-AY</td>
+            <td>1963, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C3AE-D</td>
+            <td>1963, 406 FE medium-block, 2-bolt mains, oil pressure relief</td>
+          </tr>
+          <tr>
+            <td>C3AE-KY</td>
+            <td>1963, 390 FE medium-block, 2-bolt mains, Police</td>
+          </tr>
+          <tr>
+            <td>C3AE-M</td>
+            <td>1963, 427 FE medium-block, cross-bolted mains, top-oiler</td>
+          </tr>
+          <tr>
+            <td>C3AE-N</td>
+            <td>1963, 289 Windsor small-block, 2-bolt mains, Hi-Po, manual, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C3AE-D</td>
+            <td>1963, 406 FE medium-block, 2-bolt mains, Hi-Po</td>
+          </tr>
+          <tr>
+            <td>C3AE-Z</td>
+            <td>1963, 427 FE medium-block, cross-bolted mains, top-oiler</td>
+          </tr>
+          <tr>
+            <td>C3ME-B</td>
+            <td>1963, 390 FE medium-block, 2-bolt mains, Police</td>
+          </tr>
+          <tr>
+            <td>C3OE</td>
+            <td>1963, 221 Windsor small-block, 2-bolt mains, 5-bolt bellhousing, 2 freeze plugs</td>
+          </tr>
+          <tr>
+            <td>C3OE</td>
+            <td>1963, 260 Windsor small-block, 2-bolt mains, 5-bolt bellhousing, 2 freeze plugs</td>
+          </tr>
+          <tr>
+            <td>C3OE</td>
+            <td>1963, 289 Windsor small-block, 2-bolt mains, 5-bolt bellhousing, 2 freeze plugs</td>
+          </tr>
+          <tr>
+            <td>C3OE-A</td>
+            <td>1963, 221 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C3OE-B</td>
+            <td>1963, 260 Windsor small-block, 2-bolt mains, 5-bolt bellhousing, 2 freeze plugs</td>
+          </tr>
+          <tr>
+            <td>C3OE-B</td>
+            <td>1963, 289 Windsor small-block, 2-bolt mains, 5-bolt bellhousing, Hi-Po</td>
+          </tr>
+          <tr>
+            <td>C3OE-C</td>
+            <td>1963, 260 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C4AE</td>
+            <td>1964, 289 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C4AE</td>
+            <td>1964, 427 FE medium-block, cross-bolted mains, top-oiler</td>
+          </tr>
+          <tr>
+            <td>C4AE-A</td>
+            <td>1964, 427 FE medium-block, cross-bolted mains, top-oiler</td>
+          </tr>
+          <tr>
+            <td>C4AE-D</td>
+            <td>1964, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C4AE-F</td>
+            <td>1964, 390 FE medium-block, 2-bolt mains, Police</td>
+          </tr>
+          <tr>
+            <td>C4DE</td>
+            <td>1964, 289 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C4OE</td>
+            <td>1964, 289 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C4OE-B</td>
+            <td>1964, 260 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C4OE-B</td>
+            <td>289 Windsor small-block, 2-bolt mains, 5-bolt bellhousing, Hi-Po</td>
+          </tr>
+          <tr>
+            <td>C4OE-C</td>
+            <td>289 Windsor small-block, 2-bolt mains, 5-bolt bellhousing, Hi-Po</td>
+          </tr>
+          <tr>
+            <td>C4OE-D</td>
+            <td>1964, 260 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C4OE-E</td>
+            <td>1964, 260 Windsor small-block, 2-bolt mains, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C4OE-F</td>
+            <td>289 Windsor small-block, 2-bolt mains, Hi-Po, manual, 5-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C5AE</td>
+            <td>1965-1967, 289 Windsor small-block, 2-bolt mains, 6-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C5AE-A</td>
+            <td>1965, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C5AE-A</td>
+            <td>1965, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C5AE-A</td>
+            <td>1965-1968, 289 Windsor small-block, 2-bolt mains, 6-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C5AE-B</td>
+            <td>1965, 390 FE medium-block, 2-bolt mains, Police</td>
+          </tr>
+          <tr>
+            <td>C5AE-D</td>
+            <td>1965, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C5AE-E</td>
+            <td>1965, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C5AE-E</td>
+            <td>1965-1968, 289 Windsor small-block, Hi-Po, 2-bolt mains, 6-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C5AE-H</td>
+            <td>1965, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C5JE-D</td>
+            <td>1965, 427 FE medium-block, cross-bolted mains, side-oiler, Industrial</td>
+          </tr>
+          <tr>
+            <td>C5OE-A</td>
+            <td>1965-1967, 289 Windsor small-block, 2-bolt mains, 6-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C5OE-C</td>
+            <td>1965-1967, 289 Windsor small-block, 2-bolt mains, 6-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C6AE </td>
+            <td>1966-1967, 289 Windsor small-block, 2-bolt mains, 6-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C6AE-A</td>
+            <td>1966-1967, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C6AE-A</td>
+            <td>1966-1967, 428 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C6AE-B</td>
+            <td>1966, 428 FE medium-block, 2-bolt mains, Police</td>
+          </tr>
+          <tr>
+            <td>C6AE-B</td>
+            <td>1966-1967, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C6AE-C</td>
+            <td>1966, 289 Windsor small-block, 2-bolt mains, 6-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C6AE</td>
+            <td>1966-1967, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C6AE-D</td>
+            <td>1966-1967, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C6AE-F</td>
+            <td>1966, 428 FE medium-block, 2-bolt mains, Police</td>
+          </tr>
+          <tr>
+            <td>C6AE-N</td>
+            <td>1966, 289 Windsor small-block, 2-bolt mains, 6-bolt bellhousing</td>
+          </tr>
+          <tr>
+            <td>C6JE-B</td>
+            <td>1966, 427 FE medium-block, cross-bolted mains, side-oiler, Marine</td>
+          </tr>
+          <tr>
+            <td>C6ME</td>
+            <td>1966, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C6ME</td>
+            <td>1966-1970, 428 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C6ME-A</td>
+            <td>1966, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C6ME-A</td>
+            <td>1966-1970, 428 FE medium-block, 2-bolt mains, Police</td>
+          </tr>
+          <tr>
+            <td>C7AE-A</td>
+            <td>1967, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C7JE-A</td>
+            <td>1967, 427 FE medium-block, cross-bolted mains, side-oiler, Marine</td>
+          </tr>
+          <tr>
+            <td>C7JE-E</td>
+            <td>1967, 427 FE medium-block, cross-bolted mains, side-oiler, Industrial</td>
+          </tr>
+          <tr>
+            <td>C7ME</td>
+            <td>1964-1970, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C7ME</td>
+            <td>1967-1970, 428 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C7ME-A</td>
+            <td>1967, 428 FE medium-block, 2-bolt mains, Cobra Jet, Police</td>
+          </tr>
+          <tr>
+            <td>C7ME-A</td>
+            <td>1967-1970, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C7ME-A</td>
+            <td>1967-1970, 428 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C7ME-C</td>
+            <td>1967, 428 FE medium-block, 2-bolt mains, Cobra Jet, Police</td>
+          </tr>
+          <tr>
+            <td>C8AE</td>
+            <td>1968, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8AE-A</td>
+            <td>1968, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8AE-A</td>
+            <td>1968, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C8AE-B</td>
+            <td>1968, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8AE-B</td>
+            <td>1968, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C8AE-C</td>
+            <td>1968, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8AE-E</td>
+            <td>1968, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8AE-G</td>
+            <td>1968, 427 FE medium-block, cross-bolted mains, side-oiler, service</td>
+          </tr>
+          <tr>
+            <td>C8AE-H</td>
+            <td>1968, 427 FE medium-block, cross-bolted mains, side-oiler</td>
+          </tr>
+          <tr>
+            <td>C8AM-B</td>
+            <td>1968, 289 Windsor small-block, 2-bolt mains, Service</td>
+          </tr>
+          <tr>
+            <td>C8AZ-G</td>
+            <td>1968-1972, 427 FE medium-block, cross-bolted mains, side-oiler, service, high-nickel</td>
+          </tr>
+          <tr>
+            <td>C8FE</td>
+            <td>1968-1970, Boss 302 Cleveland/Windsor small-block hybrid, 4-bolt mains, high-nickel</td>
+          </tr>
+          <tr>
+            <td>C8ME</td>
+            <td>1968-1970, 428 FE medium-block, 2-bolt mains, Cobra Jet, Super Cobra Jet</td>
+          </tr>
+          <tr>
+            <td>C8ME</td>
+            <td>1968-1970, 361/390/391/428 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8ME-A</td>
+            <td>1968, 389/391, FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>C8ME-A</td>
+            <td>1968-1970, 428 FE medium-block, 2-bolt mains, Cobra Jet, Super Cobra Jet</td>
+          </tr>
+          <tr>
+            <td>C8ME-A</td>
+            <td>1968, 360, FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8ME-A</td>
+            <td>1968, 390, FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8OE</td>
+            <td>1968-1970, 302 Windsor small-block, 2-bolt mains, truck</td>
+          </tr>
+          <tr>
+            <td>C8OE-A</td>
+            <td>1968-1969, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8OE-B</td>
+            <td>1968-1976, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8SZ</td>
+            <td>1968, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8SZ-B</td>
+            <td>1968, 429 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8TE</td>
+            <td>A 1968-1976, 360, FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>C8TE-B</td>
+            <td>1968-1979, 302 Windsor small-block, 2-bolt mains, truck</td>
+          </tr>
+          <tr>
+            <td>C8VE</td>
+            <td>1968-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8VE-E</td>
+            <td>1968-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8VE-F</td>
+            <td>1968-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8VY-A</td>
+            <td>1968-1976, 460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C8VY-E</td>
+            <td>1975-1978, 460 Big-Block Ford, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>C9OE</td>
+            <td>1968-1969, 302 Windsor small-block, 2-bolt mains, truck</td>
+          </tr>
+          <tr>
+            <td>C9OE-B</td>
+            <td>1969-1970, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C9AE</td>
+            <td>1969-1974, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C9AE-E</td>
+            <td>1969-1970, 429 Big-Block Ford, 4-bolt mains, Boss</td>
+          </tr>
+          <tr>
+            <td>C9DE-C</td>
+            <td>1969-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C9OE</td>
+            <td>1969-1976, 351 Windsor small-block, 2-bolt mains, High-nickel</td>
+          </tr>
+          <tr>
+            <td>C9OE-A</td>
+            <td>1969-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C9OE-B</td>
+            <td>1969-1984, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C9OE-C</td>
+            <td>1969-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C9TE-B</td>
+            <td>1969, 302 Windsor small-block, 2-bolt mains, truck</td>
+          </tr>
+          <tr>
+            <td>C9VE-A</td>
+            <td>1969-1970, 429 Big-Block Ford, 2-bolt mains, Cobra Jet</td>
+          </tr>
+          <tr>
+            <td>C9VE-A</td>
+            <td>1969-1973, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C9VE-B</td>
+            <td>1969-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C9ZE</td>
+            <td>1969-1970, Boss 302 Cleveland/Windsor small-block hybrid, 4-bolt mains, high-nickel</td>
+          </tr>
+          <tr>
+            <td>CA8A-B</td>
+            <td>1968-1977, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>D-Blocks</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>D0AE-A</td>
+            <td>1970-1971, 351 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AE-B</td>
+            <td>1970-1971, 351 Cleveland small-block, 4-bolt mains</td>
+          </tr>
+          <tr>
+            <td>C0AE-C</td>
+            <td>1970-1971, 351 Cleveland small-block, 4-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AE-D</td>
+            <td>1970-1971, 351 Cleveland small-block, 4-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AE-E</td>
+            <td>1970-1971, 351 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AE-F</td>
+            <td>1970-1971, 351 Cleveland small-block, 4-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AE-G</td>
+            <td>1970-1972, 351 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AE-H</td>
+            <td>1970-1971, 351 Cleveland small-block, 4-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AE-J</td>
+            <td>1970-1971, 351 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AE-L</td>
+            <td>1970-1971, 351 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0AZ-D</td>
+            <td>1970-1975, 351 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0OE-3A2</td>
+            <td>1980-1984, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0OE-E8A</td>
+            <td>1980, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0OE-B</td>
+            <td>1970-1971, 429 Big-Block Ford, 4-bolt mains, Cobra Jet, Super Cobra Jet, Police</td>
+          </tr>
+          <tr>
+            <td>D0OZ-C</td>
+            <td>1970-1974, 1980-1984, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0SZ-A</td>
+            <td>1970-1973, 429 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0SZ-D</td>
+            <td>1970-1973, 429 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0VE</td>
+            <td>1970-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0VE-A</td>
+            <td>1970-1972, 429 Big-Block Ford, 4-bolt mains, Cobra Jet, Super Cobra Jet, Police</td>
+          </tr>
+          <tr>
+            <td>D0VE-A</td>
+            <td>1970-1973, 429 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0VE-A</td>
+            <td>1970-1974, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0VE-B</td>
+            <td>1970-1974, 460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D0ZE-A</td>
+            <td>1970, Boss 302 Cleveland/Windsor small-block hybrid, 4-bolt mains, high-nickel</td>
+          </tr>
+          <tr>
+            <td>D0ZE-B</td>
+            <td>1970, Boss 302 Cleveland/Windsor small-block hybrid, 4-bolt mains, high-nickel</td>
+          </tr>
+          <tr>
+            <td>D1AE</td>
+            <td>1971-1978, 351M/400 Cleveland small-block, 2-bolt mains, high-nickel</td>
+          </tr>
+          <tr>
+            <td>D1AE-A</td>
+            <td>1971-1982, 400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1AE-A</td>
+            <td>1975-1982, 351M Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1AE-A1C</td>
+            <td>1971-1977, 400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1AE-A2C</td>
+            <td>1971-1977, 400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1AE-AB</td>
+            <td>1971-1982, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1AE-AC</td>
+            <td>1971-1982, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1AE-C</td>
+            <td>1975-1982, 351M Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1AE-DA</td>
+            <td>1971-1984, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1DE-A</td>
+            <td>1971-1974, 460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1M7-AA</td>
+            <td>1971-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1MZ-AA</td>
+            <td>1971-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1OE-AA</td>
+            <td>1971-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1TE-AA</td>
+            <td>1971-1977, 302 Windsor small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D1TE-E</td>
+            <td>1971-1974, 302 Windsor small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D1VE</td>
+            <td>1971-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1VE-A</td>
+            <td>1971-1973, 429 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1VE-A2B</td>
+            <td>1971-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1VE-AA</td>
+            <td>1971-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1VZ</td>
+            <td>1971-1972, 429 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1ZE-A</td>
+            <td>1971, 351 Cleveland small-block, 4-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1ZE-AZ</td>
+            <td>1971-1978, 429/460 Big-Block Ford, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1ZE-B</td>
+            <td>1971, Boss 302 Cleveland/Windsor small-block hybrid, 4-bolt mains, Service</td>
+          </tr>
+          <tr>
+            <td>D1ZE-B</td>
+            <td>1971, 351 Cleveland small-block, 4-bolt mains, Boss</td>
+          </tr>
+          <tr>
+            <td>D1ZM-A</td>
+            <td>1971-1972, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1ZM-AA</td>
+            <td>1971-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1ZM-DA</td>
+            <td>1971-1976, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D1ZZ-A</td>
+            <td>1971-1974, 351 Cleveland small-block, 4-bolt mains, High Output, Cobra Jet, Boss</td>
+          </tr>
+          <tr>
+            <td>D2AE-B4A</td>
+            <td>1972-1974, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D2AE-BA</td>
+            <td>1972-1974, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D2AE-BA1</td>
+            <td>1972-1978, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D2AE-CA</td>
+            <td>1972-1974, 1971-1974, 351 Cleveland small-block, 4-bolt mains, High Output, Cobra Jet, Boss</td>
+          </tr>
+          <tr>
+            <td>D2AE-DA</td>
+            <td>1972-1974, 351 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D2AE-EA</td>
+            <td>1972-1974, 351 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D2OE-AB</td>
+            <td>1972-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D2TE</td>
+            <td>1972-1978, 330 FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D2YZ</td>
+            <td>1972-1978, 400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D3AE-B</td>
+            <td>1973, 400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D3AE-BA</td>
+            <td>1973, 400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D3DE-A</td>
+            <td>1973-1974, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D3HE-BA</td>
+            <td>1973-1976, 401 Super Duty big-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D3TE</td>
+            <td>1973-1978, 360/361/390/391 FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D3TE-1</td>
+            <td>1973, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D3TE-AC</td>
+            <td>1973, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D3TE-HA</td>
+            <td>1973, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D3TE-SA</td>
+            <td>1973-1977, 330 FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D3ZE-A</td>
+            <td>1973, 351 Cleveland small-block, 4-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-32A</td>
+            <td>1974-1977, 351M Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-AA</td>
+            <td>1974, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-AA8</td>
+            <td>1974-1978, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-B1A</td>
+            <td>1974-1982, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-B2A</td>
+            <td>1974-1982, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-BA</td>
+            <td>1974-1978, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-BZA</td>
+            <td>1974-1979, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-D2A</td>
+            <td>1974-1982, 400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-DA</td>
+            <td>1974-1980, 351M Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4AE-ED</td>
+            <td>1974-0976, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4DE-AA</td>
+            <td>1974-1979, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4DE-BA</td>
+            <td>1974-1979, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4HE-AA</td>
+            <td>1974-1978, 401/477/534 Super Duty big-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D4OE-AA</td>
+            <td>1974-1980, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D4TE</td>
+            <td>1974-1978, 330 FE medium-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D4TE-AC</td>
+            <td>1974, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D5AE-A</td>
+            <td>1975, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D5AE-AA</td>
+            <td>1975, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D5AE-A1A</td>
+            <td>1975, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D5AE-A2A</td>
+            <td>1975, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D5AZ</td>
+            <td>1975, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D5ZY-AA</td>
+            <td>1975-1981, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D7TE</td>
+            <td>1977-1982, 460 Big-Block Ford, 4-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D7TE-A1A</td>
+            <td>1977-1982, 351M/400 Cleveland small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D7TE-A2A</td>
+            <td>1977-1982, 351M/400 Cleveland small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D7TE-A2B</td>
+            <td>1977-1982, 351M/400 Cleveland small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D7TE-A3A</td>
+            <td>1977-1982, 351M/400 Cleveland small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D7TE-AB</td>
+            <td>1977-1982, 351M/400 Cleveland small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D7TE-AZB</td>
+            <td>1977-1980, 351M/400 Cleveland small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D7TE-BA</td>
+            <td>1977, 390 FE medium-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D8AE-A</td>
+            <td>1978, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D8AE-AA</td>
+            <td>1978, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D8AE-A1A</td>
+            <td>1978, 351M/400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D8BE</td>
+            <td>1978-1979, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D8OE</td>
+            <td>1978-1980, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D8TE</td>
+            <td>1978-1982, 460 Big-Block Ford, 4-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D8VE-A3A</td>
+            <td>1978-1980, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D9AE-AA</td>
+            <td>1979-1980, 400 Cleveland small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D9AE-EB</td>
+            <td>1979-1982, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D9AE-EC</td>
+            <td>1979-1982, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D9AE-ED</td>
+            <td>1979-1982, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D9OE-E3A</td>
+            <td>1979-1981, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>D9TE</td>
+            <td>1979-1984, 460 Big-Block Ford, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D9TE-AA</td>
+            <td>1979-1982, 351M Cleveland small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D9TE-AA</td>
+            <td>1979-1984, 351 Windsor small-block, 2-bolt mains, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D9TE-AB</td>
+            <td>1979-1984, 429/460 Big-Block Ford, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>D9TE-BB</td>
+            <td>1979-1984, 370 Big-Block Ford, 2-bolt mains, Truck</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>E-Blocks</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>EOAE-D3C</td>
+            <td>1980-1984, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>EOSE-A2E</td>
+            <td>1980, 255 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E3AE-AA</td>
+            <td>1983-1991, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E3AE-BA</td>
+            <td>1983, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E4AE-FA</td>
+            <td>1984-1991, 351 Windsor small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>E5AE-AA</td>
+            <td>1985, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E5AE-AA</td>
+            <td>1985-1988, 351 Windsor small-block, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>E5AE-C3B</td>
+            <td>1985-1986, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E6AE-BA</td>
+            <td>1986, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E6SE</td>
+            <td>1986, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E7AE-CA</td>
+            <td>1987-1991, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E7AE-EA</td>
+            <td>1987-1991, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E7TE</td>
+            <td>1987, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>E7TE-BD</td>
+            <td>1987-1995, 429/460 Big-Block Ford, 2-bolt mains, Truck</td>
+          </tr>
+          <tr>
+            <td>E9AE-AA</td>
+            <td>1989, 351 Windsor small-block, 2-bolt mains, Truck</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>F-Blocks</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>F1SE</td>
+            <td>1991-1996, 302 Windsor small-block, 2-bolt mains</td>
+          </tr>
+          <tr>
+            <td>F4TE-AA</td>
+            <td>1994-1996, 351 Windsor small-block, 2-bolt mains</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <hr>
     <footer>
