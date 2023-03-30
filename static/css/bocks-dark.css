@@ -42,8 +42,7 @@
 
 .bocks-dark .progress-bar-filled:after,
 .bocks-dark .progress-bar-filled:before,
-.bocks-dark code,
-.bocks-dark strong {
+.bocks-dark code {
 	color: #1b1c1d
 }
 
