@@ -15,3 +15,8 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_pass }}
         server-dir: raymondjohnhill.com/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/*.sh
+          **/README.md
