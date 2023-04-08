@@ -356,6 +356,10 @@ table th {
 table tbody td:first-child {
   font-weight: 700;
 }
+img.\-center {
+  margin: auto;
+  display: block;
+}
 .form {
   width: 30rem;
 }
