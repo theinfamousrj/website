@@ -356,6 +356,9 @@ table th {
 table tbody td:first-child {
   font-weight: 700;
 }
+img.blog {
+  padding: 2%;
+}
 img.\-center {
   margin: auto;
   display: block;
