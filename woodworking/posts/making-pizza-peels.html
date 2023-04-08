@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Making Pizza Peels</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; worker-src 'self'; child-src 'none';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/hack.css?bustCache=deadbeef10">
+  <link rel="stylesheet" href="/static/css/bocks-dark.css?bustCache=deadbeef10">
+  <link rel="stylesheet" href="/static/css/shim.css?bustCache=deadbeef10">
+  <link rel="manifest" href="/static/manifest.json">
+  <!-- <link rel="alternate" title="RJ's Blog" type="application/rss+xml" href="https://raymondjohnhill.com/feeds/blog.rss">
+  <link rel="alternate" title="RJ's Blog" type="application/json" href="https://raymondjohnhill.com/feeds/blog.json"> -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/favicon/icon-57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/favicon/icon-60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/icon-72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/icon-76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/icon-114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/icon-120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/icon-144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/icon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/icon-180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/icon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/icon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/static/favicon/icon-48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="/static/favicon/icon-72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon/icon-96.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/static/favicon/icon-144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/static/favicon/icon-192.png">
+  <link rel="mask-icon" sizes="16x16" href="/static/favicon/icon-16.png" color="#1b1c1d">
+  <link rel="shortcut icon" sizes="196x196" href="/static/favicon/icon-192.png">
+  <meta name="msapplication-TileColor" content="#1b1c1d">
+  <meta name="msapplication-TileImage" content="/static/favicon/icon-144.png">
+  <meta name="msapplication-config" content="/static/browserconfig.xml">
+  <meta name="theme-color" content="#1b1c1d">
+  <meta name="description" content="Making some pizza peels for friends.">
+</head>
+
+<!-- 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&#GPY?7!~~^^^^^^^^^^^^~~!7JYPB&&@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&BY7~^:::::::::::::::::::::::::::::::^~75#@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&P?^::::::::::::::::::::::::::::::::::::::::::^5@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&5~:::::::::::::::::::::::::::::::::::::::::::::::.~#@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@&?:.:::::::::::::::::::::::::::::::::::::::::::::::::::#@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@5:::::::::::::::::::::::::::::::::::::::::::::::::::::::^&@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@Y..:::::::::::::::::::::::::::::::::::::::::::::::::::::::7@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@PPB&&&P^:::::::::::::::^!7JYY5YYJ7~^:::::::::::::::::::::::::::#@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@J...^?J^::::::::::::::5&&#BGGGGGB#&&#P!::::::::::::::::::::::::5@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@#GJ~..:::::::::::::::^^:.........:~JB@&7::::::::::::::::::::::?@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@#!:::::::::::::::.:~?5G##&#BP?^..^J~::::::::::::::::::::::?@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@P:::::::::::::~P&@@@@@@@@@@@@B~.::::::::^^~~^^^:::::::::Y@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G:::::::::::5@@@@@@@@@@@@@@@@@?:::::::~7!!~~^^:::::::::B@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@7:::::::::P@@@@@@@@@@@@@@@@@@@~:::::^?7!!~~^^::::::::^@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Y::::::::^@@@@@@@@@@@@@@@@@@@@J:::::~?7!!~~^^:::::::.P@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@~:::7!:::^&@@@@@@@@@@@@@@@@@@@!:::::~?7!!~~^^:::::::~@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@&7::~#@@B~::?@@@@@@@@@@@@@@@@@@Y::::::^?77!~~^^:::::::#@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@&#J^::?@@@@@@J::7&@@@@@@@@@@@@@@#7::::::::!77!!~^:::::::G@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@?~~:::::J@@@@@@@@5:::7G&@@@@@@@&#5!:::::::::::^~~^::::::::P@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@&Y~:::::@@@@@@@@@@~:::::^~!!!~^::::::::::::::::::::::::::G@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@&Y:::?#&&##&&#Y::::::::::.:::::::^~~~::::^~^::::::::!&@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@P::!~::::::::.::::::::::~::::Y#&@@@@&^:7@@&B?~^:^7G@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@Y.~@&:::B#^::5&!::B&^::Y@Y::7@@@@@@@@!^B@@@@@@&&@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@G!?@&^^^@@^:.#@7.:@@^:.P@Y::Y@@@@@B5!^!&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@&#&@@&&&@@###@@#BB@@###@@&&&&@@@@#.:^!J@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@Y.~@&^^!@@777&@5?J@@?7!#@Y~^G@@@@B.^~?#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@G.^&B::^@&:::#@~.^@@::.B@7.:&@@@B!~YB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@&:::::::~~:::~!:::?7:::~?^:.7G#-&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@P!~^^^::::::..:::..:::..:~Y#-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&#####BBBBBB###&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-->
+
+<body class="hack bocks-dark">
+  <div class="container">
+    <header>
+      <nav>
+        <a href="/">RJ</a> - 
+        <a href="/blog">Blog</a> - 
+        <a href="/contact">Contact</a> - 
+        <a href="/resume">Resume</a> - 
+        <a href="/random">Random</a> - 
+        <a href="/woodworking">Woodworking</a> - 
+        <a href="/car-stuff">Car Stuff</a> | 
+        Cloud Eng @ <a target="_blank" rel="noopener noreferrer" href="https://chippercash.com">Chipper</a>
+      </nav>
+    </header>
+    <br /><br />
+    <div class="mainframe">
+      <h1>Making Pizza Peels</h1>
+      <p>
+        So, typically I make pizza peels for friends that just want a nice handmade pizza peel to use in their pizza oven or their 
+        normal oven. So my buddy (and tattoo artist) Craig Foster and I got to talking after I saw one of his Instagram posts about 
+        drawing on pizza peels. We chatted for a bit and he told me how he preferred drawing on basswood rather than pine, and that
+        his only issue with pizza peels is that nobody made them out of basswood. So of course I said "I can make them out of basswood!"
+        And so that's how I started making basswood pizza peels for folks to draw on. Below you'll find some of my favorites that I've 
+        made, both from basswood as well as other woods.
+      </p>
+      <h2>Fun Links</h2>
+      <p>
+        <a target="_blank" rel="noopener" href="https://instagram.com/skinwerks?igshid=YmMyMTA2M2Y=">Craig's Instagram</a><br />
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/p/CjdAbTqgT9r/?igshid=YmMyMTA2M2Y=">One of my favorite things Craig drew on my pizza peels</a>
+      </p>
+    </div>
+    <h2>Photos</h2>
+    <div class="grid">
+      <div class="cell -6of12 content">
+        <a href="/woodworking/images/making-pizza-peels-01.jpeg">
+          <img src="/woodworking/images/making-pizza-peels-01.jpeg" class="-center" 
+          alt="Wooden pizza peels stacked on top of each other" width="350" height="350">
+        </a>
+      </div>
+      <div class="cell -6of12 content">
+        <a href="/woodworking/images/making-pizza-peels-02.jpeg">
+          <img src="/woodworking/images/making-pizza-peels-02.jpeg" class="-center" 
+          alt="Wooden pizza peels stacked on top of each other" width="350" height="350">
+        </a>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <blockquote>
+        Copyright 2023 RJ Hill? Maybe. What does this even mean?
+        <br />
+        Any and all opinions listed here are my own and not representative of my employers; future, past, and present.
+      </blockquote>
+      <p>See my <a href="/salary-transparency">salary transparency data</a>.</p>
+    </footer>
+    <script src="/static/js/installsw.js" defer></script>
+  </div>
+</body>
+
+</html>
