@@ -155,18 +155,34 @@ a:hover {
 }
 .hack p,
 .hack .conversation-chat,
-.hack blockquote,
-.hack em,
-.hack strong {
+.hack blockquote {
   font-size: 1rem;
   font-style: normal;
   font-family: Menlo, monospace;
 }
-.hack blockquote,
-.hack code,
-.hack em,
+.hack em {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: Menlo, monospace;
+}
 .hack strong {
+  font-size: 1.2rem;
+  font-style: bold;
+  font-family: Menlo, monospace;
+}
+.hack blockquote,
+.hack code {
   font-size: 1rem;
+  line-height: 20px;
+}
+.hack em {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 20px;
+}
+.hack strong {
+  font-size: 1.1rem;
+  font-style: bold;
   line-height: 20px;
 }
 .hack blockquote,
@@ -244,11 +260,11 @@ a:hover {
   left: 0;
   line-height: 20px;
 }
-.hack em:after,
+/* .hack em:after,
 .hack em:before {
   content: "*";
   display: inline;
-}
+} */
 .hack pre code:after,
 .hack pre code:before {
   display: none;
