@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Stupid Numbers</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; worker-src 'self'; child-src 'none';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/hack.css?bustCache=deadbeef10">
+  <link rel="stylesheet" href="/static/css/bocks-dark.css?bustCache=deadbeef10">
+  <link rel="stylesheet" href="/static/css/shim.css?bustCache=deadbeef10">
+  <link rel="manifest" href="/static/manifest.json">
+  <!-- <link rel="alternate" title="RJ's Blog" type="application/rss+xml" href="https://raymondjohnhill.com/feeds/blog.rss">
+  <link rel="alternate" title="RJ's Blog" type="application/json" href="https://raymondjohnhill.com/feeds/blog.json"> -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/favicon/icon-57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/favicon/icon-60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/icon-72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/icon-76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/icon-114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/icon-120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/icon-144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/icon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/icon-180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/icon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/icon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/static/favicon/icon-48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="/static/favicon/icon-72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon/icon-96.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/static/favicon/icon-144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/static/favicon/icon-192.png">
+  <link rel="mask-icon" sizes="16x16" href="/static/favicon/icon-16.png" color="#1b1c1d">
+  <link rel="shortcut icon" sizes="196x196" href="/static/favicon/icon-192.png">
+  <meta name="msapplication-TileColor" content="#1b1c1d">
+  <meta name="msapplication-TileImage" content="/static/favicon/icon-144.png">
+  <meta name="msapplication-config" content="/static/browserconfig.xml">
+  <meta name="theme-color" content="#1b1c1d">
+  <meta name="description" content="I was talking with a freind about numbers the other day...">
+</head>
+
+<!-- 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&#GPY?7!~~^^^^^^^^^^^^~~!7JYPB&&@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&BY7~^:::::::::::::::::::::::::::::::^~75#@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&P?^::::::::::::::::::::::::::::::::::::::::::^5@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&5~:::::::::::::::::::::::::::::::::::::::::::::::.~#@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@&?:.:::::::::::::::::::::::::::::::::::::::::::::::::::#@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@5:::::::::::::::::::::::::::::::::::::::::::::::::::::::^&@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@Y..:::::::::::::::::::::::::::::::::::::::::::::::::::::::7@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@PPB&&&P^:::::::::::::::^!7JYY5YYJ7~^:::::::::::::::::::::::::::#@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@J...^?J^::::::::::::::5&&#BGGGGGB#&&#P!::::::::::::::::::::::::5@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@#GJ~..:::::::::::::::^^:.........:~JB@&7::::::::::::::::::::::?@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@#!:::::::::::::::.:~?5G##&#BP?^..^J~::::::::::::::::::::::?@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@P:::::::::::::~P&@@@@@@@@@@@@B~.::::::::^^~~^^^:::::::::Y@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@G:::::::::::5@@@@@@@@@@@@@@@@@?:::::::~7!!~~^^:::::::::B@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@7:::::::::P@@@@@@@@@@@@@@@@@@@~:::::^?7!!~~^^::::::::^@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Y::::::::^@@@@@@@@@@@@@@@@@@@@J:::::~?7!!~~^^:::::::.P@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@~:::7!:::^&@@@@@@@@@@@@@@@@@@@!:::::~?7!!~~^^:::::::~@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@&7::~#@@B~::?@@@@@@@@@@@@@@@@@@Y::::::^?77!~~^^:::::::#@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@&#J^::?@@@@@@J::7&@@@@@@@@@@@@@@#7::::::::!77!!~^:::::::G@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@?~~:::::J@@@@@@@@5:::7G&@@@@@@@&#5!:::::::::::^~~^::::::::P@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@&Y~:::::@@@@@@@@@@~:::::^~!!!~^::::::::::::::::::::::::::G@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@&Y:::?#&&##&&#Y::::::::::.:::::::^~~~::::^~^::::::::!&@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@P::!~::::::::.::::::::::~::::Y#&@@@@&^:7@@&B?~^:^7G@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@Y.~@&:::B#^::5&!::B&^::Y@Y::7@@@@@@@@!^B@@@@@@&&@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@G!?@&^^^@@^:.#@7.:@@^:.P@Y::Y@@@@@B5!^!&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@&#&@@&&&@@###@@#BB@@###@@&&&&@@@@#.:^!J@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@Y.~@&^^!@@777&@5?J@@?7!#@Y~^G@@@@B.^~?#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@G.^&B::^@&:::#@~.^@@::.B@7.:&@@@B!~YB@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@&:::::::~~:::~!:::?7:::~?^:.7G#-&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@P!~^^^::::::..:::..:::..:~Y#-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&#####BBBBBB###&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-->
+
+<body class="hack bocks-dark">
+  <div class="container">
+    <header>
+      <nav>
+        <a href="/">RJ</a> - 
+        <a href="/blog">Blog</a> - 
+        <a href="/contact">Contact</a> - 
+        <a href="/resume">Resume</a> - 
+        <a href="/random">Random</a> - 
+        <a href="/woodworking">Woodworking</a> - 
+        <a href="/car-stuff">Car Stuff</a> | 
+        Cloud Eng @ <a target="_blank" rel="noopener noreferrer" href="https://chippercash.com">Chipper</a>
+      </nav>
+    </header>
+    <br /><br />
+    <div class="mainframe">
+      <h1>Stupid Numbers</h1>
+      <p>
+        So, as per the usual, I was chatting with my buddy the other day about numbers and just dumb stuff 
+        you'd imagine that two high teenagers talk about to sound deep. But he said something that bugged me
+        and I couldn't let it go until I figured out what the fuck he was saying and if it was true. He said:
+        <blockquote>
+          The set of all countable numbers is ridiculously small compared to the set of all real numbers.
+        </blockquote>
+        My gut reaction was "WHAT THE HELL MAN?" My heart and brain were in why-would-you-do-this-to-me mode, 
+        I mean, it was close to 1 am and I did want to sleep at some point... So of course I wrote myself a note
+        to go and see if I could somehow prove this to myself, and I did. But in proving it to myself I found another
+        really neat concept called <strong>computable numbers</strong> which is even flipping weirder - but also kind of similar.
+      </p>
+      <h2>Countable Numbers</h2>
+      <p>
+        First and foremost, here's a wikipedia explanation of <a target="_blank" href="https://en.wikipedia.org/wiki/Countable_set">
+        Countable sets</a>. When determining if a set is countable we actually have 3 potential outcomes:
+        <ul>
+          <li>Countable</li>
+          <li>Countably Infinite</li>
+          <li>Uncountable</li>
+        </ul>
+        So I won't use goofy words like <strong>cardinality</strong> and instead I'm going to try to explain this more naturally.
+        If we have a set (a list) of whole numbers that goes from 0 to infinity (&infin;) we call this the list of natural numbers 
+        and it is considered <strong>Countably Infinite</strong>. The length (cardinality) of this list is called <strong>aleph null</strong> 
+        (aleph zero or aleph nought) but we're just going to call it BIG. So make a list of numbers, count that, then think of the 
+        list of natural numbers. Is your list smaller? Then it's considered countable. Is it the same size as the list of natural 
+        numbers? Still countable but just countably infinite. Is it bigger than the list of natural numbers? Sorry, un-friggin-countable.
+      </p>
+      <h2>Real Numbers</h2>
+      <p>
+        Just like the last section, here's a wikipedia explanation of <a target="_blank" href="https://en.wikipedia.org/wiki/Real_number">
+        Real numbers</a>.
+
+      </p>
+      <h2>Computable Numbers</h2>
+      <p>
+        Don't worry... here's ANOTHER wikipedia explanation for you: <a target="_blank" href="https://en.wikipedia.org/wiki/Computable_number">
+        Computable numbers</a>.
+
+      </p>
+      <h2>List of References</h2>
+      <p>
+        <ul>
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Real_number">Real numbers</a></li>
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Countable_set">Countable sets</a></li>
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Computable_number">Computable numbers</a></li>
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Almost_everywhere">Almost everywhere</a></li>
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Aleph_number#Aleph-null">Aleph number</a></li>
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument">Cantor's diagonal argument</a></li>
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Turing%27s_proof">Turing's proof</a></li>
+        </ul>
+      </p>
+    </div>
+    <hr>
+    <footer>
+      <blockquote>
+        Copyright 2023 RJ Hill? Maybe. What does this even mean?
+        <br />
+        Any and all opinions listed here are my own and not representative of my employers; future, past, and present.
+      </blockquote>
+      <p>See my <a href="/salary-transparency">salary transparency data</a>.</p>
+    </footer>
+    <script src="/static/js/installsw.js" defer></script>
+  </div>
+</body>
+
+</html>
