@@ -98,7 +98,13 @@
     </header>
     <br /><br />
     <div class="mainframe">
-      <h1>Raymond John Hill, MSc</h1>
+      <div class="grid">
+        <div class="cell -6of12 content">
+          <h1>Raymond John Hill, MSc</h1>
+        </div>
+        <div class="cell -3of12 content"></div>
+        <div class="cell -3of12 content"><a href="/downloads/files/pdf/RJH_Resume.pdf" download>Download Resume</a></div>
+      </div>
       <hr>
       <div class="grid">
         <div class="cell -3of12 content">Atlanta, GA</div>
@@ -107,37 +113,89 @@
         <br>
         <div class="cell -11of12 content">
           <p>
-            An accomplished product engineer and senior business consultant with more than 20 years of experience 
-            collaborating with clients providing reliable technical expertise, project management, and program 
-            delivery to achieve goals and objectives.
+            An accomplished software, devops, and cloud engineer with more than 20 years of experience
+            collaborating with clients providing reliable technical expertise, project management, and program
+            delivery to help them achieve their goals and objectives.
           </p>
         </div>
         <div class="cell -11of12 content">
           <h2>SKILLS</h2>
           <p>
-            Project Management, Delivery, Budgeting, Contract Writing, Process Control and Optimization, Team
-            Coordination and Prioritization, Infrastructure Provisioning and Scaling (AWS), Data Migration
-            (PostgreSQL, MySQL, SQL Server, Teradata, etc.), Containerization of Applications.
+            Budgeting, Team Management, Infrastructure Provisioning (AWS, Terraform) and Scaling (EC2, RDS, 
+            ECS), Data Storage & Migration (PostgreSQL, MySQL, Teradata, Redis, S3), ETL Processes, Data 
+            Warehousing (Snowflake), Containerization (Docker, Kubernetes, ECS), Cloud Networking (VPC, TGW, 
+            IGW).
           </p>
         </div>
         <div class="cell -9of12 content">
           <h2>RECENT EXPERIENCE</h2>
           <div>
+            <strong>Self Employed, Atlanta</strong> — <i>Consultant</i>
+            <br />
+            JAN 2019 - PRESENT
+            <ul>
+              <li>
+                Managed and delivered engagements with various clients such as Palmetto Solar, Left Main REI, 
+                and ViewIQ
+              </li>
+              <li>
+                Created the infrastructure and necessary functions for a POC to determine the feasibility of 
+                utilizing Amazon QuickSight as the front-end for an Internal Rate of Return (IRR) application 
+                backed by Lambda, Python, and Pandas
+              </li>
+              <li>
+                Created the infrastructure as well as the entire front-end and backend for an IRR application 
+                using React, NodeJS, AWS Lambda, Python, and Pandas
+              </li>
+              <li>
+                Helped Left Main REI reduce their 100,000,000+ nightly API calls to their MongoDB-backed API 
+                by analyzing code, removing redundant calls, and implementing batching procedures
+              </li>
+              <li>
+                Took over ownership of the code for ViewIQ (formerly known as ProView) and enhanced the 
+                software, cloud, and other processes to showcase security practices and alleviate concerns 
+                during security audits by healthcare companies and law firms
+              </li>
+            </ul>
+          </div>
+          <div>
             <strong>Chipper Cash, Atlanta</strong> — <i>Senior Cloud Engineer</i>
             <br />
-            MAY 2022 - PRESENT
+            MAY 2022 - JUNE 2023
             <ul>
               <li>
                 Lead the data migration from Heroku to AWS Aurora — billions of financial transactions moved
                 safely and securely with negligible downtime for our users
               </li>
               <li>
-                Helped to fine tune queries and processes in order to utilize our cloud resources more
+                Fine tuning SQL queries and processes in order to utilize our AWS RDS resources more
                 efficiently
               </li>
               <li>
-                Helped Chipper save over $350,000 per year in cloud expenses making our services more
-                efficient and splitting non-critical workloads in order to avoid over-provisioning
+                Helped Chipper save over $350,000 per year in AWS expenses making our services more efficient
+                and splitting non-critical workloads in order to avoid over-provisioning
+              </li>
+              <li>
+                Designed and deployed a multi-account AWS architecture utilizing VPCs, Transit Gateways
+                (TGWs), Internet Gateways (IGWs), and route tables - connected to Salesforce Heroku via VPC
+                peering to keep traffic routing over the AWS backbone
+              </li>
+              <li>
+                Developed ETL processes to ship data from both Heroku and AWS (via EC2 bastion) to Snowflake
+              </li>
+              <li>
+                Migrated user cache from Postgres to Redis in order to both save on storage costs and
+                significantly reduce latency for our users
+              </li>
+              <li>
+                Created Chipper's CI/CD processes and pipelines using GitHub actions coupled with Secrets
+                Operations (SOPS) and Semaphore CI to deploy backend code (NodeJS/TypeScript), mobile
+                applications (ReactNative), and TypeORM migrations for data (gated deployments)
+              </li>
+              <li>
+                Created diagrams and documentation of all processes and resources involved in AWS
+                infrastructure in order to showcase security practices and alleviate concerns during bank
+                audits
               </li>
             </ul>
           </div>
@@ -147,19 +205,54 @@
             JAN 2018 - MAY 2022
             <ul>
               <li>
-                Managed several direct reports and advocating for career growth, engagement, and productivity
-              </li>
-              <li>
-                Mentored, trained, and supported both Slalom and client staff to ensure effective placement
-                to accelerate growth and promote skills
+                Managed several direct reports - advocating for career growth, engagement, and productivity
               </li>
               <li>
                 Met with prospective clients to gather requirements in order to draft proposals and
                 statements of work with thoughtful deadlines and optimal staffing
               </li>
               <li>
-                Managed and delivered engagements with clients such as The Home Depot, Cox Automotive, and
-                Vulcan Materials
+                Mentored, trained, and supported both Slalom and client staff to ensure effective placement
+                to accelerate growth and promote skills
+              </li>
+              <li>
+                Managed and delivered engagements with clients such as The Home Depot, Cox Automotive, Anthem
+                Insurance, IHG, and Vulcan Materials
+              </li>
+              <li>
+                Created multiple one-off serverless applications for Vulcan Materials utilizing Serverless
+                Framework with AWS Lambda and DynamoDB in order to minimize cost and man-hours spent on
+                invoicing thousands of clients by hand, giving their teams more time to focus on improving
+                their products and services
+              </li>
+              <li>
+                Moved ~4Pb of data to Google's BigQuery for The Home Depot by creating systems (NodeJS +
+                React + SQL) with which data owners could run their own ETL on their data to move it off of
+                Teradata systems, saving The Home Depot millions of dollars per year in Teradata licensing
+              </li>
+              <li>
+                Built a modernized accumulator app for Anthem insurance using React, Java, Spring Boot,
+                Atlassian Bamboo, and AWS - the very first application in the Cloud at Anthem, saving them
+                well over $500,000 in yearly mainframe and associated costs
+              </li>
+              <li>
+                Established multi-cloud proof of concept for IHG and developed test APIs in NodeJS for both
+                AWS and Google Cloud utilizing Aurora Serverless and Google Cloud Spanner as the databases
+              </li>
+              <li>
+                Led DevOps team to architect and develop online retail portal (CarShop.com) for Cox
+                Automotive &amp; Penske utilizing Serverless Framework and CloudFormation with AWS Lambda,
+                ElasticSearch, DynamoDB, CodePipeline, CodeBuild, ECR, ECS, and S3
+              </li>
+              <li>
+                Created a greenfield Supply Chain system for The Home Depot utilizing CI/CD processes and
+                pipelines in Jenkins for a Java API which deployed and ran on a Kubernetes cluster (GKE) and
+                interfaced with Google Cloud Spanner
+              </li>
+              <li>
+                Conducted Well-Architected Reviews for various clients in order to ensure all data and
+                applications were maintaining high standards in all six pillars of the AWS Well-Architected
+                Framework
               </li>
             </ul>
           </div>
@@ -170,13 +263,18 @@
             <ul>
               <li>
                 Built, deployed, and maintained mapping and geo-analytics software products used worldwide
+                utilizing a combination of Salesforce, GitHub, Jenkins, and AWS (EC2, Lambda, DynamoDB)
               </li>
               <li>
-                Built APIs to support internal Salesforce applications leveraging NodeJS, MongoDB, and
-                PostgreSQL on AWS Stack
+                Built APIs to support internal Salesforce applications leveraging NodeJS, DynamoDB, and
+                Postgres on AWS
               </li>
               <li>
-                Mentored and coached developers, product managers, and stakeholders during development
+                Created a pipeline using simple deployment tactics (pull code, zip, upload) using GitHub,
+                Jenkins, and EC2
+              </li>
+              <li>
+                Mentored and coached engineers, product managers, and stakeholders during development
                 lifecycle
               </li>
             </ul>
@@ -191,9 +289,9 @@
           </p>
         </div>
         <div class="cell -9of12 content">
-          <h2>AWARDS & CERTIFICATIONS</h2>
+          <h2>AWARDS &amp; CERTIFICATIONS</h2>
           <p>
-            <strong>Spark Award</strong> — 2020 — Slalom & Cox Automotive
+            <strong>Spark Award</strong> — 2020 — Slalom &amp; Cox Automotive
             <br />
             <strong>Mogul Award</strong> — 2019 — Slalom
             <br />
